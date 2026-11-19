@@ -1,71 +1,71 @@
 # social-event-sentiment-platform
 
-Plateforme d'analyse des sentiments et détection de tendances sur les réseaux sociaux pour les événements sportifs de football.
+Plateforme d'analyse des sentiments et de dÃ©tection de tendances sur les rÃ©seaux sociaux pour les Ã©vÃ©nements sportifs de football.
 
-## Présentation
+## PrÃ©sentation
 
-Ce projet(resp) vise à concevoir et développer une plateforme de **Social Listening** spécialisée dans les événements de football.
-Elle collecte, traite et analyse automatiquement les commentaires et publications des réseaux sociaux afin d'extraire les opinions du public, d'identifier les sujets les plus engagés et de détecter les moments marquants des conversations.
+Ce projet vise Ã  concevoir et dÃ©velopper une plateforme de **Social Listening** spÃ©cialisÃ©e dans les Ã©vÃ©nements de football.
 
-Les commentaires proviennent de multiples langues et écritures : **arabe, Darija marocaine, Arabizi, français, anglais et commentaires mixtes**.
+Elle collecte, traite et analyse automatiquement les commentaires et publications des rÃ©seaux sociaux afin d'extraire les opinions du public, d'identifier les sujets les plus engagÃ©s et de dÃ©tecter les moments marquants des conversations.
+
+Les commentaires proviennent de multiples langues et Ã©critures : **arabe, Darija marocaine, Arabizi, franÃ§ais, anglais et commentaires mixtes**.
 
 ## Objectifs
 
-- Collecter les données depuis des sources sociales autorisées.
-- Préparer et annoter des datasets multilingues.
+- Collecter les donnÃ©es depuis des sources sociales autorisÃ©es.
+- PrÃ©parer et annoter des datasets multilingues.
 - Nettoyer et normaliser le texte (gestion des emojis, Arabizi, dialectes).
-- Construire et évaluer des modèles de classification des sentiments (3 classes : positif, négatif, neutre).
-- Extraire les mots-clés et les sujets les plus fréquents.
-- Détecter les pics d'activité conversationnelle et les corréler aux événements du match.
-- Visualiser les résultats dans un dashboard interactif.
+- Construire et Ã©valuer des modÃ¨les de classification des sentiments (3 classes : positif, nÃ©gatif, neutre).
+- Extraire les mots-clÃ©s et les sujets les plus frÃ©quents.
+- DÃ©tecter les pics d'activitÃ© conversationnelle et les corrÃ©ler aux Ã©vÃ©nements du match.
+- Visualiser les rÃ©sultats dans un dashboard interactif.
 
 ## Architecture du projet
 
-`
+```
 src/social_sentiment/
-  ingestion/       # Collecte et stockage des données
+  ingestion/       # Collecte et stockage des donnÃ©es
   preprocessing/   # Nettoyage et normalisation du texte
-  nlp/             # Modèles NLP : sentiment, mots-clés, détection de langue
-  evaluation/      # Évaluation des modèles et rapports
-  streaming/       # Lecture des flux de données
-  alerts/          # Détection de pics et notifications
+  nlp/             # ModÃ¨les NLP : sentiment, mots-clÃ©s, dÃ©tection de langue
+  evaluation/      # Ã‰valuation des modÃ¨les et rapports
+  streaming/       # Lecture des flux de donnÃ©es
+  alerts/          # DÃ©tection de pics et notifications
 
 data/
-  raw/         # Données brutes collectées
-  interim/     # Données intermédiaires (nettoyées)
-  processed/   # Données prêtes pour l'entraînement
+  raw/         # DonnÃ©es brutes collectÃ©es
+  interim/     # DonnÃ©es intermÃ©diaires (nettoyÃ©es)
+  processed/   # DonnÃ©es prÃªtes pour l'entraÃ®nement
 
 docs/          # Documentation du projet
 frontend/      # Interface web et dashboard
 scripts/       # Scripts utilitaires
 notebooks/     # Analyses exploratoires et prototypes
-reports/       # Rapports d'évaluation et résultats
-`
+reports/       # Rapports d'Ã©valuation et rÃ©sultats
+```
 
 ## Installation
 
-`ash
+```bash
 python -m venv .venv
 .venv/Scripts/activate
 pip install -r requirements.txt
-`
+```
 
 ## Modes de travail
 
-- **Squelette du projet** : cette version contient la structure de base et les point d'entrée.
-- **Étape suivante** : implémentation progressive des modules (ingestion, preprocessing, nlp, evaluation, streaming, alerts).
-- **Dashboard** : interface web interactive construite avec les résultats du pipeline.
+- **Squelette du projet** : cette version contient la structure de base et les points d'entrÃ©e.
+- **Ã‰tape suivante** : implÃ©mentation progressive des modules (ingestion, preprocessing, nlp, evaluation, streaming, alerts).
+- **Dashboard** : interface web interactive construite avec les rÃ©sultats du pipeline.
 
-## Contenu de ce dépôt
+## Contenu de ce dÃ©pÃ´t
 
-- README.md : ce document.
-- docs/CDC_v0.1.md : cahier des charges de base du projet.
-- equirements.txt : dépendances Python.
-- .gitignore : fichiers à ignorer (données brutes, fichiers de cache, variables d'environnement).
-- src/social_sentiment/ : code source Python du pipeline.
-- data/, eports/, 
-otebooks/, scripts/, rontend/ : fichiers générés ou à créer.
+- `README.md` : ce document.
+- `docs/CDC_v0.1.md` : cahier des charges de base du projet.
+- `requirements.txt` : dÃ©pendances Python.
+- `.gitignore` : fichiers Ã  ignorer (donnÃ©es brutes, fichiers de cache, variables d'environnement).
+- `src/social_sentiment/` : code source Python du pipeline.
+- `data/`, `reports/`, `notebooks/`, `scripts/`, `frontend/` : fichiers gÃ©nÃ©rÃ©s ou Ã  crÃ©er.
 
 ## Licence
 
-Projet académique (PFA) - À adapter selon les besoins de l'établissement.
+Projet acadÃ©mique (PFA) - Ã€ adapter selon les besoins de l'Ã©tablissement.

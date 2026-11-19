@@ -1,134 +1,141 @@
-# Document de César Cour (CDC) - Version 0.1
+# Document de CÃ©sar Cour (CDC) - Version 0.1
 
-Plafond du projet : **Conception et développement d'une plateforme intelligente d'analyse des sentiments et de détection des tendances sur les réseaux sociaux lors d'événements sportifs de football.**
+Plafond du projet : **Conception et dÃ©veloppement d'une plateforme intelligente d'analyse des sentiments et de dÃ©tection des tendances sur les rÃ©seaux sociaux lors d'Ã©vÃ©nements sportifs de football.**
 
 ---
 
-## 1. Intitulé du projet
+## 1. IntitulÃ© du projet
 
-Conception et développement d'une plateforme intelligente d'analyse des sentiments et de détection des tendances sur les réseaux sociaux lors d'événements sportifs de football.
+Conception et dÃ©veloppement d'une plateforme intelligente d'analyse des sentiments et de dÃ©tection des tendances sur les rÃ©seaux sociaux lors d'Ã©vÃ©nements sportifs de football.
 
-## 2. Contexte et problématique
+## 2. Contexte et problÃ©matique
 
-Les événements sportifs, particulièrement les matchs de football, génèrent une quantité importante de commentaires et de réactions sur les plateformes sociales.
+Les Ã©vÃ©nements sportifs, particuliÃ¨rement les matchs de football, gÃ©nÃ¨rent une quantitÃ© importante de commentaires et de rÃ©actions sur les plateformes sociales.
 
-Ces interactions contiennent des informations intéressantes pour les community managers, les journalistes sportifs, les créateurs de contenu et les organisations sportives.
+Ces interactions contiennent des informations intÃ©ressantes pour les community managers, les journalistes sportifs, les crÃ©ateurs de contenu et les organisations sportives.
 
-Cependant, l'exploitation manuelle de ces données est difficile, particulièrement en présence de plusieurs langues, de dialectes, d'expressions informelles, d'Arabizi et de commentaires multilingues.
+Cependant, l'exploitation manuelle de ces donnÃ©es est difficile, particuliÃ¨rement en prÃ©sence de plusieurs langues, de dialectes, d'expressions informelles, d'Arabizi et de commentaires multilingues.
 
-Le projet consiste à développer une plateforme capable de collecter, traiter et analyser automatiquement ces données afin d'extraire les opinions du public et d'identifier les sujets qui génèrent le plus d'engagement.
+Le projet consiste Ã  dÃ©velopper une plateforme capable de collecter, traiter et analyser automatiquement ces donnÃ©es afin d'extraire les opinions du public et d'identifier les sujets qui gÃ©nÃ¨rent le plus d'engagement.
 
-## 3. Objectif général
+## 3. Objectif gÃ©nÃ©ral
 
-Concevoir et développer une plateforme de Social Listening spécialisée dans les événements de football, intégrant des techniques de Machine Learning, Deep Learning et NLP pour analyser les sentiments, identifier les sujets populaires et détecter les moments marquants des conversations sociales.
+Concevoir et dÃ©velopper une plateforme de Social Listening spÃ©cialisÃ©e dans les Ã©vÃ©nements de football, intÃ©grant des techniques de Machine Learning, Deep Learning et NLP pour analyser les sentiments, identifier les sujets populaires et dÃ©tecter les moments marquants des conversations sociales.
 
-## 4. Objectifs spécifiques
+## 4. Objectifs spÃ©cifiques
 
-- Collecter les commentaires provenant de sources sociales autorisées.
-- Constituer et préparer des datasets multilingues.
-- Développer un pipeline de nettoyage et de normalisation textuelle.
-- Construire et évaluer des modèles de classification des sentiments.
-- Prendre en charge le Darija marocain, l'Arabizi, l'arabe, le français, l'anglais et les commentaires mixtes.
-- Extraire les mots-clés, expressions et sujets les plus fréquents.
-- Détecter automatiquement les pics d'activité conversationnelle.
-- Analyser les réactions du public autour des événements du match.
-- Développer un dashboard interactif pour visualiser les résultats.
+- Collecter les commentaires provenant de sources sociales autorisÃ©es.
+- Constituer et prÃ©parer des datasets multilingues.
+- DÃ©velopper un pipeline de nettoyage et de normalisation textuelle.
+- Construire et Ã©valuer des modÃ¨les de classification des sentiments.
+- Prendre en charge le Darija marocain, l'Arabizi, l'arabe, le franÃ§ais, l'anglais et les commentaires mixtes.
+- Extraire les mots-clÃ©s, expressions et sujets les plus frÃ©quents.
+- DÃ©tecter automatiquement les pics d'activitÃ© conversationnelle.
+- Analyser les rÃ©actions du public autour des Ã©vÃ©nements du match.
+- DÃ©velopper un dashboard interactif pour visualiser les rÃ©sultats.
 
 ## 5. Utilisateurs cibles
 
 - Community managers sportifs.
-- Créateurs de contenu spécialisés dans le football.
-- Journalistes et médias sportifs.
-- Organisateurs d'événements sportifs.
+- CrÃ©ateurs de contenu spÃ©cialisÃ©s dans le football.
+- Journalistes et mÃ©dias sportifs.
+- Organisateurs d'Ã©vÃ©nements sportifs.
 - Responsables marketing et communication sportive.
 
-## 6. Fonctionnalités attendues
+## 6. FonctionnalitÃ©s attendues
 
-### F1 – Gestion des événements sportifs
-- Créer un événement.
-- Définir les équipes, les joueurs et les mots-clés associés.
-- Configurer les sources de données.
-- Définir la période d'analyse.
+### F1 â€“ Gestion des Ã©vÃ©nements sportifs
 
-### F2 – Collecte des données
-- Récupérer les publications et commentaires accessibles via les API autorisées.
-- Stocker les dates et les informations nécessaires à l'analyse.
-- Éviter les doublons.
-- Gérer les erreurs et les limites des API.
+- CrÃ©er un Ã©vÃ©nement.
+- DÃ©finir les Ã©quipes, les joueurs et les mots-clÃ©s associÃ©s.
+- Configurer les sources de donnÃ©es.
+- DÃ©finir la pÃ©riode d'analyse.
 
-### F3 – Prétraitement des données
+### F2 â€“ Collecte des donnÃ©es
+
+- RÃ©cupÃ©rer les publications et commentaires accessibles via les API autorisÃ©es.
+- Stocker les dates et les informations nÃ©cessaires Ã  l'analyse.
+- Ã‰viter les doublons.
+- GÃ©rer les erreurs et les limites des API.
+
+### F3 â€“ PrÃ©traitement des donnÃ©es
+
 - Nettoyage des commentaires.
 - Normalisation du texte.
-- Gestion des emojis et caractères spéciaux.
-- Gestion des différentes formes d'écriture du Darija.
+- Gestion des emojis et caractÃ¨res spÃ©ciaux.
+- Gestion des diffÃ©rentes formes d'Ã©criture du Darija.
 - Identification des langues et des scripts.
 
-### F4 – Analyse des sentiments
-- Classification positive, négative et neutre.
-- Affichage de la confiance du modèle.
-- Comparaison des réactions entre équipes et joueurs.
+### F4 â€“ Analyse des sentiments
 
-### F5 – Extraction des sujets et mots-clés
-- Identification des termes les plus mentionnés.
-- Extraction des expressions fréquentes.
-- Regroupement des commentaires par thématique.
-- Analyse des sujets liés à l'arbitrage, aux joueurs, aux buts et aux décisions du match.
+- Classification positive, nÃ©gative et neutre.
+- Affichage de la confiance du modÃ¨le.
+- Comparaison des rÃ©actions entre Ã©quipes et joueurs.
 
-### F6 – Détection des moments marquants
+### F5 â€“ Extraction des sujets et mots-clÃ©s
+
+- Identification des termes les plus mentionnÃ©s.
+- Extraction des expressions frÃ©quentes.
+- Regroupement des commentaires par thÃ©matique.
+- Analyse des sujets liÃ©s Ã  l'arbitrage, aux joueurs, aux buts et aux dÃ©cisions du match.
+
+### F6 â€“ DÃ©tection des moments marquants
+
 - Analyse du volume de commentaires dans le temps.
-- Détection des augmentations inhabituelles.
-- Identification des sujets associés aux pics.
-- Corrélation avec les événements du match lorsque leur chronologie est disponible.
+- DÃ©tection des augmentations inhabituelles.
+- Identification des sujets associÃ©s aux pics.
+- CorrÃ©lation avec les Ã©vÃ©nements du match lorsque leur chronologie est disponible.
 
-### F7 – Dashboard analytique
-- Nombre total de mentions collectées.
-- Répartition des sentiments.
-- Évolution des sentiments dans le temps.
-- Classement des mots-clés et des sujets.
-- Classement des joueurs et équipes les plus mentionnés.
+### F7 â€“ Dashboard analytique
+
+- Nombre total de mentions collectÃ©es.
+- RÃ©partition des sentiments.
+- Ã‰volution des sentiments dans le temps.
+- Classement des mots-clÃ©s et des sujets.
+- Classement des joueurs et Ã©quipes les plus mentionnÃ©s.
 - Visualisation des moments marquants.
-- Filtres par événement, période, source et langue.
+- Filtres par Ã©vÃ©nement, pÃ©riode, source et langue.
 
 ## 7. Contraintes techniques
 
 - Respect des politiques et conditions d'utilisation des API.
-- Disponibilité et qualité des datasets.
-- Capacité de traitement des commentaires.
-- Gestion des différentes langues et écritures.
-- Limitation des ressources matérielles.
-- Protection des données personnelles.
+- DisponibilitÃ© et qualitÃ© des datasets.
+- CapacitÃ© de traitement des commentaires.
+- Gestion des diffÃ©rentes langues et Ã©critures.
+- Limitation des ressources matÃ©rielles.
+- Protection des donnÃ©es personnelles.
 
-## 8. Périmètre du MVP
+## 8. PÃ©rimÃ¨tre du MVP
 
-La première version doit intégrer :
+La premiÃ¨re version doit intÃ©grer :
 
-- Un seul événement sportif à la fois.
-- Une source de données réelle.
-- Un système de collecte et de stockage.
-- Un modèle de sentiment à trois classes.
-- Une analyse des mots-clés et des sujets.
-- Une détection élémentaire des pics de conversation.
+- Un seul Ã©vÃ©nement sportif Ã  la fois.
+- Une source de donnÃ©es rÃ©elle.
+- Un systÃ¨me de collecte et de stockage.
+- Un modÃ¨le de sentiment Ã  trois classes.
+- Une analyse des mots-clÃ©s et des sujets.
+- Une dÃ©tection Ã©lÃ©mentaire des pics de conversation.
 - Un dashboard interactif.
 
-Les autres plateformes, les émotions avancées et les fonctionnalités complexes seront considérées comme des extensions.
+Les autres plateformes, les Ã©motions avancÃ©es et les fonctionnalitÃ©s complexes seront considÃ©rÃ©es comme des extensions.
 
 ## 9. Livrables attendus
 
-- Étude bibliographique sur le NLP et la sentiment analysis.
+- Ã‰tude bibliographique sur le NLP et la sentiment analysis.
 - Rapport d'analyse des datasets.
-- Dataset préparé et documentation de son annotation.
-- Modèles de Machine Learning et Deep Learning.
-- Rapport d'évaluation des performances.
+- Dataset prÃ©parÃ© et documentation de son annotation.
+- ModÃ¨les de Machine Learning et Deep Learning.
+- Rapport d'Ã©valuation des performances.
 - Pipeline de collecte et de traitement.
 - Application web et dashboard.
 - Documentation technique.
-- Rapport final du PFA et démonstration fonctionnelle.
+- Rapport final du PFA et dÃ©monstration fonctionnelle.
 
-## 10. Critères de réussite
+## 10. CritÃ¨res de rÃ©ussite
 
-- Collecte fonctionnelle depuis au moins une source autorisée.
-- Traitement correct des différentes formes de texte ciblées.
-- Évaluation reproductible du modèle sur des données indépendantes.
-- Visualisation cohérente des résultats.
-- Détection de pics de conversation avec identification des sujets associés.
-- Exécution de bout en bout sur un événement de football.
+- Collecte fonctionnelle depuis au moins une source autorisÃ©e.
+- Traitement correct des diffÃ©rentes formes de texte ciblÃ©es.
+- Ã‰valuation reproductible du modÃ¨le sur des donnÃ©es indÃ©pendantes.
+- Visualisation cohÃ©rente des rÃ©sultats.
+- DÃ©tection de pics de conversation avec identification des sujets associÃ©s.
+- ExÃ©cution de bout en bout sur un Ã©vÃ©nement de football.
